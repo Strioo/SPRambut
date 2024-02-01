@@ -9,19 +9,17 @@
   <!-- Stylesheet -->
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #ecf0f1; /* Light background color */
       color: #34495e; /* Dark text color */
       height: 100vh;
       overflow: hidden;
-    }
+      }
     
     .container {
-      width: 1200px; /* Reduced width for better readability */
+      width: 1200px; 
       margin: 0 auto;
+      background-size: 500px;
       padding: 60px 30px;
-      background: #fff;
       border-radius: 15px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       height: 800px;
@@ -40,7 +38,7 @@
     }
     
     header p {
-      font-size: 18px;
+      font-size: 22px;
       color: #555;
     }
 
@@ -65,9 +63,10 @@
     }
 
     .hero-text h2 {
-      font-size: 36px; /* Larger font size for heading */
-      margin-bottom: 15px;
-      color: #3498db; /* Blue color for heading */
+      margin-top: 48px;
+      font-size: 36px;
+      margin-bottom: 64px;
+      color: #3498db;
     }
 
     .hero-text p {
@@ -89,7 +88,7 @@
     }
 
     button:hover {
-      background: #c0392b; /* Darker red color on hover */
+      background: #c0392b; 
     }
 
   </style>
@@ -110,7 +109,6 @@
       <div class="hero-text">
         <h2>Dapatkan Diagnosa & Solusi untuk Masalah Rambut Anda</h2>
         <p>Konsultasikan masalah rambut Anda dengan sistem pakar kami dan dapatkan diagnosa serta solusi terbaik dari pakar.</p>
-        <a href="?page=konsultasi"><button>Mulai Diagnosa</button></a>
       </div>
     </section>
 

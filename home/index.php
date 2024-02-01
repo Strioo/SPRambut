@@ -17,6 +17,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href="css/font-family.css" rel="stylesheet" type="text/css" />
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="../assets/images/uhair.png" type="image/x-icon">
 </head>
 
 <body>

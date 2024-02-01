@@ -778,7 +778,7 @@
   border-bottom-left-radius: 0;
 }
 .skin-green-light .main-header .navbar {
-  background-color: #4D4C7D;
+  background-color: rgb(0, 0, 0);
 }
 .skin-green-light .main-header .navbar .nav > li > a {
   color: #fff;
@@ -823,7 +823,7 @@
   border-bottom: 0 solid transparent;
 }
 .skin-green-light .main-header .logo:hover {
-  background-color: #4D4C7D;
+  background-color: #4d4c7d;
 }
 .skin-green-light .main-header li.user-header {
   background-color: rgb(84, 148, 211);
@@ -834,7 +834,7 @@
 .skin-green-light .wrapper,
 .skin-green-light .main-sidebar,
 .skin-green-light .left-side {
-  background-color: #f9fafc;
+  background-color: #115bf0;
 }
 .skin-green-light .content-wrapper,
 .skin-green-light .main-footer {

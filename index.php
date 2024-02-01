@@ -21,6 +21,12 @@ if (isset($_SESSION['LOG_USER'])) {
         <link href="assets/css/custom.css" rel="stylesheet">
         <link href="assets/images/logo.png" type="image/x-icon" rel="shortcut icon">
         <link rel="stylesheet" href="assets/iCheck/flat/_all.css">
+        <style>
+            body {
+      background: url(../images/sambo.JPG);
+
+            }
+        </style>
 
         <script src="assets/js/jQuery-2.1.4.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
@@ -79,7 +85,6 @@ if (isset($_SESSION['LOG_USER'])) {
                 <!-- Header Navbar -->
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->
-                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                         <span class="sr-only">Toggle navigation</span>
                     </a>
                 </nav>

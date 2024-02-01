@@ -32,41 +32,30 @@ if (isset($_POST['save'])) {
     }
 }  else {
     $action = empty($_GET['action']) ? 'add' : $_GET['action'];
-
     if ($action == 'edit') {
         $id = $_GET['id'];
-        $q = mysqli_query($con, "SELECT * FROM penyakit WHERE id_penyakit='" . $id . "'");
+        $q = mysqli_query($con, "select * from penyakit where id_penyakit='" . $id . "'");
         $r = mysqli_fetch_array($q);
         $kode_penyakit = $r['kode_penyakit'];
         $nama_penyakit = $r['nama_penyakit'];
         $gejala = array();
-
-        $qgejala = "SELECT * FROM rule WHERE id_penyakit='$id'";
+        $qgejala = "select * from rule where id_penyakit='$id'";
         $qgejala = mysqli_query($con, $qgejala);
-
-        while ($rgejala = mysqli_fetch_array($qgejala)) {
+        while ($rgejala = mysqli_fetch_array($qgejala)) { //perulangan untuk menampung data gejala
             $gejala[] = $rgejala['id_gejala'];
         }
-
         // set data gejala yang ada agar otomatis ter ceklis sesuai dengan data yang ada di database
         echo "
-    <script>
-        $(function() {
-            $('#gejala').selectpicker('val', " . json_encode($gejala) . ");
-        });
-    </script>
-    ";
+		<script>
+			$(function() {
+				$('#gejala').selectpicker('val', " . json_encode($gejala) . ");
+			});
+		</script>
+		";
     }
-
     if ($action == 'delete') {
         $id = $_GET['id'];
-
-        // Hapus data penyakit dari tabel penyakit
-        mysqli_query($con, "DELETE FROM penyakit WHERE id_penyakit='" . $id . "'");
-
-        // Hapus data terkait dari tabel rule
-        mysqli_query($con, "DELETE FROM rule WHERE id_penyakit='" . $id . "'");
-
+        mysqli_query($con, "delete from rule where id_penyakit='" . $id . "'");
         exit("<script>location.href='" . $link_data . "';</script>");
     }
 }
